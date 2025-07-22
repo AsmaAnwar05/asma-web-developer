@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma Anwar | Front-End Developer</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("fPyPaF9McRbrxVE9S"); 
+            })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="website2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Asma <span>| Front-End Dev</span></div>
+        <ul>
+            <li><a href="#header-text">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="header-text" class="container">
+        <p> Hi, I am <span class="name">Asma</span> </p>
+        <div>and I am a <br><span class="front-end" id="element"><br>Front-end Developer</span></div>
+        <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn" id="githubbtn">Visit Github</button>
+        </div>
+    </div>
+    <!-- //-----------------About-------------------- -->
+    <div id="about" class="container">
+        <div class="row">
+            <div class="column1">
+                <img src="img/IMG_7008 (3).jpg" alt="">
+            </div>
+            <div class="column2">
+                <h1>About Me</h1>
+                <P>Hi! I’m a passionate Front-End Developer and a current CSE student at BUBT. I enjoy building clean,
+                    responsive, and user-friendly websites using HTML, CSS, and JavaScript — and I’m currently focused
+                    on
+                    improving my web development skills.
+
+                    Before diving into web development, I explored different tools out of personal interest, including
+                    graphic design, PowerPoint,
+                    Microsoft Excel, and Word. I have a working knowledge of these and can use them when needed, though
+                    my main focus now is on
+                    becoming a better developer.
+
+                    I believe in continuous learning and love taking on challenges that help me grow. Whether it’s
+                    designing a website or preparing
+                    creative content, I always aim to learn and improve with every project.
+                </P>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <!--<p class="tab-links" onclick="opentab('experiance')">Experiance</p>-->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Development:</span>
+                            <br>HTML, CSS, JavaScript,<!-- Responsive Design, Basic Bootstrap -->
+                        </li>
+                        <li><span>Design Tools:</span><br>Working knowledge of Canva, Adobe Photoshop, Adobe Illustrator
+                        </li>
+                        <li><span>Productivity Tools:</span><br>Familiar with Microsoft PowerPoint, Excel, Word</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="tab-contents" id="experiance">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Web Developer at ET Institute</li>
+                            <li><span>2022 - 2024</span><br>Team Lead at StarApp LLC.</li>
+                            <li><span>2020 - 2022</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                     </div>-->
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025 - Current </span><br>B.Sc. in Computer Science and Engineering
+                            <br>Bangladesh University of Business and Technology (BUBT)<br>Current CGPA: 3.91 out of
+                            4.00
+                        </li>
+                        <li><span>June 2019 - Dec 2021</span><br>HSC(Class 12)
+                            <br>Hazera-Taju Degree College
+                            <br>GPA: 5.00 out of 5.00
+                        </li>
+                        <li><span>Jan 2017 - Feb 2019 </span><br>SSC(Class 10)
+                            <br>Aunkur Society Girls High School<br>GPA: 5.00 out of 5.00
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------Sevice-------------------------------------->
+
+    <div id="services" class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div class="service-card">
+                <i class="fa-solid fa-code service-icon"></i>
+                <h2>Front-End Development</h2>
+                <p>I create responsive and user-friendly websites using HTML, CSS, and JavaScript. My goal is to turn
+                    ideas into clean,
+                    accessible layouts that work across devices.</p>
+                <a href="#projects" class="learn-more-link">View Related Projects</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-brands fa-app-store-ios service-icon"></i>
+                <h2>Presentation Design</h2>
+                <p>PowerPoint presentations for academic or professional use.Visually engaging slides with clean layouts
+                    and animations
+                    if needed.</p>
+                <a href="#projects" class="learn-more-link">View Related Projects</a>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-pen-nib service-icon"></i>
+                <h2>Graphic Design</h2>
+                <p>I use Adobe Illustrator, Photoshop, Canva and similar tools to create minimal yet appealing graphics.
+                </p>
+                <a href="#projects" class="learn-more-link">View Related Projects</a>
+            </div>
+
+            <!-- Hidden initially -->
+            <div class="service-card-extra">
+                <h2>Microsoft Word & Excel</h2>
+                <p>Document formatting, Excel tables, and basic functions.</p>
+                <a href="#projects" class="learn-more-link">View Related Projects</a>
+            </div>
+
+            <div class="service-card-extra">
+                <h2>Website Maintenance</h2>
+                <p>Fixing bugs, updating content, and minor improvements.</p>
+                <a href="#projects" class="learn-more-link">View Related Projects</a>
+            </div>
+
+        </div>
+
+        <button id="seeMoreBtn" class="btn">See More</button>
+
+
+    </div>
+
+    <!-- --------------------Portfolio----------------------- -->
+
+
+    <div id="portfolio" class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/1.jpeg" alt="">
+                <div class="layer">
+
+                    <h3>Digital Clock</h3>
+                    <p>A real-time digital clock using JavaScript, showing hours, minutes, and seconds with AM/PM format
+                    </p>
+
+                    <div class="project-link">
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Live Demo</a>
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Github Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/1.jpg" alt="">
+                <div class="layer">
+
+                    <h3>Simple Calculator</h3>
+                    <p>>Basic calculator built with HTML, CSS & JavaScript to perform addition, subtraction,
+                        multiplication, and division.</p>
+                    <div class="project-link">
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Live Demo</a>
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Github Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/3.avif" alt="">
+                <div class="layer">
+                    <h3>To-Do List App</h3>
+
+                    <p>A to-do list app where you can add, delete, and mark tasks as completed. Fully functional using
+                        local storage.</p>
+                    <div class="project-link">
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Live Demo</a>
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Github Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-------Hidden--------------->
+            <div class="work hidden-work">
+                <img src="img/1.jpg" alt="">
+                <div class="layer">
+
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic id explicabo accusamus doloribus
+                        animi
+                        necessitatibus dolores beatae nemo eaque dolorum!</p>
+                    <div class="project-link">
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Live Demo</a>
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Github Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="work hidden-work">
+                <img src="img/3.avif" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic id explicabo accusamus doloribus
+                        animi
+                        necessitatibus dolores beatae nemo eaque dolorum!</p>
+                    <div class="project-link">
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Live Demo</a>
+                        <a href="#portfolio" target="_blank" class="project-btn"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i><br>Github Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="wrkbtn" class="btn">See More</button>
+    </div>
+    <!-- ----------------Contact----------------------------*/ -->
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> <span class="contact-info"
+                        id="email">asmaanwar1119@gmail.com</span></p>
+
+                <p><i class="fa-solid fa-phone"></i><span id="number" class="contact-info">01618709636</span></p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/asma.anwar9636" target="blank"> <i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.likedin.com/" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form id="contactForm">
+                    <input class="name-email formprt" type="text" name="name" placeholder="Your Name" required>
+                    <input class="name-email formprt" type="email" name="email" placeholder="Your Email Here" required>
+                    <textarea class="formprt" id="textarea" name="message" rows="6" placeholder="Your Message Here"
+                        required></textarea>
+                    <button class="formprt" id="submit" type="submit">Submit</button>
+                </form>
+
+                <p id="successMsg" style="display:none; color: limegreen; font-weight: bold; margin-top: 10px;">
+                    ✅ Message Sent Successfully!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="website2.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-end Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
